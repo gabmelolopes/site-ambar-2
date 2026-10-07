@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Área do cliente Ambar Ras — acesse treinamentos, materiais e atendimento especializado." />
+    <title>Área do cliente — Ambar Ras</title>
+    <link rel="stylesheet" href="styles-v2.css" />
+  </head>
+  <body class="client-page">
+    <main class="client-shell">
+      <section class="client-showcase" aria-label="Apresentação da área do cliente">
+        <a class="client-brand" href="index.html" aria-label="Voltar para a página inicial">
+          <img src="images/ambar-logo.png" alt="Ambar — Construindo soluções em SAP" />
+        </a>
+
+        <div class="client-showcase-copy">
+          <p class="client-eyebrow"><span></span> AMBAR EXPERIENCE</p>
+          <h1>Conhecimento e suporte em um só <em>lugar.</em></h1>
+          <p>Acesse treinamentos, conteúdos exclusivos e os canais de atendimento da Plataforma Ambar.</p>
+
+          <div class="client-benefits" aria-label="Benefícios da área do cliente">
+            <article>
+              <span>01</span>
+              <div><strong>Aprendizado contínuo</strong><small>Trilhas organizadas por módulo</small></div>
+            </article>
+            <article>
+              <span>02</span>
+              <div><strong>Conteúdo centralizado</strong><small>Materiais sempre à sua disposição</small></div>
+            </article>
+            <article>
+              <span>03</span>
+              <div><strong>Suporte especializado</strong><small>Conexão direta com a equipe Ambar</small></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="client-showcase-foot">
+          <span>AMBAR RAS</span>
+          <span>CONSTRUINDO SOLUÇÕES EM SAP</span>
+        </div>
+      </section>
+
+      <section class="auth-side">
+        <header class="auth-topbar">
+          <a href="index.html"><span>←</span> Voltar ao site</a>
+          <span>Ambiente seguro <i></i></span>
+        </header>
+
+        <div class="auth-card" data-auth-root>
+          <div class="auth-tabs" role="tablist" aria-label="Acesso à conta">
+            <button class="is-active" type="button" role="tab" aria-selected="true" data-auth-tab="login">Entrar</button>
+            <button type="button" role="tab" aria-selected="false" data-auth-tab="register">Criar conta</button>
+          </div>
+
+          <section class="auth-panel is-active" data-auth-panel="login" aria-labelledby="login-title">
+            <div class="auth-heading">
+              <p>ÁREA DO CLIENTE</p>
+              <h2 id="login-title">Que bom ter você <em>de volta.</em></h2>
+              <span>Entre com seus dados para continuar.</span>
+            </div>
+
+            <form class="auth-form" data-auth-form="login" novalidate>
+              <label>
+                <span>E-mail corporativo</span>
+                <span class="auth-field"><i aria-hidden="true">@</i><input type="email" name="email" autocomplete="email" placeholder="nome@empresa.com.br" required /></span>
+                <small class="field-error">Informe um e-mail válido.</small>
+              </label>
+              <label>
+                <span>Senha</span>
+                <span class="auth-field"><i aria-hidden="true">•</i><input type="password" name="password" autocomplete="current-password" placeholder="Digite sua senha" minlength="8" required /><button type="button" class="password-toggle" aria-label="Mostrar senha">Ver</button></span>
+                <small class="field-error">Informe sua senha.</small>
+              </label>
+
+              <div class="auth-options">
+                <label class="check-field"><input type="checkbox" name="remember" /><span></span>Manter conectado</label>
+                <button type="button" class="text-action" data-auth-link="recover">Esqueci minha senha</button>
+              </div>
+
+              <button class="auth-submit" type="submit"><span>Acessar minha conta</span><b>→</b></button>
+              <p class="auth-feedback" role="status"></p>
+            </form>
+
+            <p class="auth-switch">Ainda não possui acesso? <button type="button" data-auth-link="register">Criar conta</button></p>
+          </section>
+
+          <section class="auth-panel" data-auth-panel="register" aria-labelledby="register-title" hidden>
+            <div class="auth-heading">
+              <p>CADASTRO</p>
+              <h2 id="register-title">Comece sua jornada na <em>Ambar.</em></h2>
+              <span>Preencha os dados para solicitar seu acesso.</span>
+            </div>
+
+            <div class="register-progress" aria-label="Progresso do cadastro">
+              <div class="is-active"><b>1</b><span>Seus dados</span></div><i></i><div><b>2</b><span>Segurança</span></div>
+            </div>
+
+            <form class="auth-form register-form" data-auth-form="register" novalidate>
+              <div class="register-step is-active" data-register-step="1">
+                <div class="field-grid">
+                  <label><span>Nome completo</span><span class="auth-field"><input type="text" name="name" autocomplete="name" placeholder="Seu nome e sobrenome" required /></span><small class="field-error">Informe seu nome completo.</small></label>
+                  <label><span>Empresa</span><span class="auth-field"><input type="text" name="company" autocomplete="organization" placeholder="Nome da empresa" required /></span><small class="field-error">Informe sua empresa.</small></label>
+                </div>
+                <label><span>E-mail corporativo</span><span class="auth-field"><i aria-hidden="true">@</i><input type="email" name="email" autocomplete="email" placeholder="nome@empresa.com.br" required /></span><small class="field-error">Informe um e-mail válido.</small></label>
+                <label><span>Telefone</span><span class="auth-field"><input type="tel" name="phone" autocomplete="tel" placeholder="(11) 99999-9999" required /></span><small class="field-error">Informe seu telefone.</small></label>
+                <button class="auth-submit" type="button" data-register-next><span>Continuar cadastro</span><b>→</b></button>
+              </div>
+
+              <div class="register-step" data-register-step="2" hidden>
+                <label><span>Crie uma senha</span><span class="auth-field"><i aria-hidden="true">•</i><input type="password" name="new-password" autocomplete="new-password" placeholder="Mínimo de 15 caracteres" minlength="15" maxlength="128" required /><button type="button" class="password-toggle" aria-label="Mostrar senha">Ver</button></span><small class="field-error">Use pelo menos 15 caracteres.</small></label>
+                <div class="password-strength" aria-live="polite"><i><b></b></i><span>Segurança da senha</span></div>
+                <label><span>Confirme a senha</span><span class="auth-field"><i aria-hidden="true">•</i><input type="password" name="confirm-password" autocomplete="new-password" placeholder="Digite novamente" required /><button type="button" class="password-toggle" aria-label="Mostrar senha">Ver</button></span><small class="field-error">As senhas precisam ser iguais.</small></label>
+                <label class="check-field terms-field"><input type="checkbox" name="terms" required /><span></span>Li e aceito a Política de Privacidade e os Termos de Uso.</label>
+                <div class="register-actions"><button type="button" class="back-step" data-register-back>← Voltar</button><button class="auth-submit" type="submit"><span>Solicitar meu acesso</span><b>→</b></button></div>
+              </div>
+              <p class="auth-feedback" role="status"></p>
+            </form>
+
+            <p class="auth-switch">Já possui uma conta? <button type="button" data-auth-link="login">Entrar</button></p>
+          </section>
+
+          <section class="auth-panel" data-auth-panel="recover" aria-labelledby="recover-title" hidden>
+            <button class="recover-back" type="button" data-auth-link="login">← Voltar para o login</button>
+            <div class="auth-heading">
+              <p>RECUPERAR ACESSO</p>
+              <h2 id="recover-title">Vamos ajudar você a <em>voltar.</em></h2>
+              <span>Informe seu e-mail corporativo para receber as instruções.</span>
+            </div>
+            <form class="auth-form" data-auth-form="recover" novalidate>
+              <label><span>E-mail corporativo</span><span class="auth-field"><i aria-hidden="true">@</i><input type="email" name="email" autocomplete="email" placeholder="nome@empresa.com.br" required /></span><small class="field-error">Informe um e-mail válido.</small></label>
+              <button class="auth-submit" type="submit"><span>Enviar instruções</span><b>→</b></button>
+              <p class="auth-feedback" role="status"></p>
+            </form>
+          </section>
+
+          <footer class="auth-card-footer"><span>© <span data-current-year></span> Ambar Ras</span><div><a href="#">Privacidade</a><a href="#">Termos</a></div></footer>
+        </div>
+      </section>
+    </main>
+    <script src="script-v2.js"></script>
+  </body>
+</html>

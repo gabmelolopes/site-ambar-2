@@ -1,0 +1,33 @@
+PROJETO AMBAR RAS — HTML, CSS E JAVASCRIPT
+
+ARQUIVOS PRINCIPAIS
+
+1. index.html
+   Página inicial do site.
+
+2. sobre.html, expertise.html, modulos.html e treinamento.html
+   Páginas internas do site institucional.
+
+3. area-cliente.html
+   Nova interface de login, cadastro em duas etapas e recuperação de acesso.
+   Nesta prévia, os formulários são apenas visuais e ainda não enviam dados.
+
+4. styles.css
+   Contém cores, tamanhos, posicionamentos, animações e responsividade.
+   O arquivo está separado em blocos numerados e comentados.
+
+5. script.js
+   Controla carrossel, animações, acordeões, formulários e a área do cliente.
+
+6. pasta images
+   Contém o logotipo, as imagens do Hero, módulos e parceiros.
+
+COMO ABRIR
+
+Extraia o ZIP e dê dois cliques no arquivo index.html.
+Não é necessário instalar Node.js, React ou qualquer dependência.
+
+IMPORTANTE
+
+Mantenha index.html, styles.css, script.js e a pasta images juntos.
+Se a pasta images for movida, as imagens deixarão de aparecer.
